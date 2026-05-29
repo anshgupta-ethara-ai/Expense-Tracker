@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Local env files (extremely important to protect Supabase secrets!)
+.env*.local
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log

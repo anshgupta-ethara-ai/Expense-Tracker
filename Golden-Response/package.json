@@ -1,0 +1,31 @@
+{
+  "name": "ethara-project",
+  "version": "1.0.0",
+  "description": "This project is a high-performance, responsive personal expense management toolkit built leveraging **Next.js 14** (App Router Architecture) and **Supabase (PostgreSQL Platform)** as a clean infrastructure wrapper.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.15.0",
+    "@supabase/supabase-js": "^2.106.2",
+    "lucide-react": "^1.17.0",
+    "next": "^14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^3.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^3.4.19"
+  }
+}
