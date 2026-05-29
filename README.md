@@ -140,6 +140,25 @@ Testing status:
 - Next.js has lint and production compile checks available.
 - There is currently no repository-wide automated unit testing framework.
 
+## GitHub & Vercel Deployment
+
+This project is fully structured and prepared for standard automated deployment pipelines via GitHub and Vercel.
+
+### Deploying to Vercel
+
+Since the Next.js application is nested in the `Golden-Response` subdirectory, configure your Vercel deployment with the following parameters:
+
+1. **Import Repository**: Connect your GitHub account and import this repository.
+2. **Configure Project**:
+   - **Root Directory**: Select `Golden-Response` (this is critical so Vercel builds the subproject instead of the repository root).
+   - **Framework Preset**: Next.js
+   - **Build Command**: `next build`
+   - **Output Directory**: `.next`
+3. **Environment Variables**: Add your Supabase credentials in the Vercel project settings:
+   - `NEXT_PUBLIC_SUPABASE_URL`: (Your Supabase project URL)
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: (Your Supabase anonymous key)
+   - `SUPABASE_SERVICE_ROLE_KEY`: (Your Supabase service role key)
+
 ## Brief Explanation of the Evaluation
 
 The file [justification.md](file:///C:/Users/Admin/expense-tracker/justification.md) contains a comparative analysis highlighting model strengths and architectural alignment decisions.
@@ -152,3 +171,4 @@ In that evaluation:
 - the final verdict says GPT is "slightly better".
 
 For the original implementation requirements and scope of the project, see [prompt.md](file:///C:/Users/Admin/expense-tracker/prompt.md).
+
